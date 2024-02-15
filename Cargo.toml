@@ -1,0 +1,30 @@
+[package]
+name = "training-on-issues"
+version = "0.1.0"
+edition = "2021"
+
+# [lib]
+# path = "src/lib.rs"
+# crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.75"
+async-openai = "0.16.2"
+chrono = "0.4.31"
+csv = "1.3.0"
+dotenv = "0.15.0"
+futures = "0.3.29"
+octocrab = "0.33.3"
+pandoc = "0.8.11"
+pandoc_ast = "0.8.6"
+pandoc_types = "0.6.0"
+serde = {version = "1.0.193", features = ["derive"]}
+# github-flows = "0.6.0"
+# openai-flows = "0.9.1"
+# slack-flows = "0.3.4"
+# tokio_wasi = {version = "1.25.2", features = ["rt"]}
+
+serde_json = "1"
+sqlx = {version = "0.7.3", features = ["json", "migrate", "sqlx-macros", "postgres", "runtime-tokio"]}
+tokio = { version = "1.25.0", features = ["full"] }
+tracing-subscriber = { version = "0.3.16", features = ["env-filter"]}
