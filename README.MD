@@ -1,4 +1,4 @@
-#Training on Issues Data
+## Training on Issues Data
 
 This project is a precursor to the [Issue-Labeler project](https://github.com/jaykchen/issue-labeler). The rationale is to train/fine-tune a smaller Open Source model on the issues data from the WasmEdge project, so that the model can do a job that previously required more capapble and costly commercial AI inference services.
 
@@ -18,5 +18,5 @@ This project
 - The fine-tuned model is saved to https://huggingface.co/jaykchen/tiny/tree/main.
 
 
-For practical reasons, the model is hosted on a 4vGPU/8G CPU only cloud instance with Huggingface Text Generation Inferencing at http://43.129.206.18:3000/generate
+For practical reasons, the model is hosted on a 4vGPU/8G CPU only cloud instance with Huggingface Text Generation Inference toolset at http://43.129.206.18:3000/generate
 
